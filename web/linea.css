@@ -1,0 +1,134 @@
+
+
+body{
+    background-image: url(fondo2.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;  
+}
+header{
+    background-image: url(24636.jpg);
+    background-size: 100%;
+    border: tomato;
+    border-radius: 20px;
+    padding:  10px;
+    border-style: groove;
+    border-width: 20px;
+}
+header h1{
+    text-align: center;
+    font-weight: 900;
+    color: tomato;
+    -webkit-text-stroke:2px white ;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+ nav a{
+    font-size: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    background-color: rgba(248, 244, 244, 0.603);
+    color: white;
+    -webkit-text-stroke:1px tomato ;
+    border-radius: 10px;
+}
+nav :hover{
+    background-color: rgba(255, 255, 0, 0.603);
+    border-color: tomato;
+    border-style: solid;
+    
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+section h2{
+    font-weight: 700;
+    color: tomato;
+    -webkit-text-stroke:2px black ;
+}
+section p{
+    font-weight: 600;
+    text-align: center;
+    background-color:rgba(248, 244, 244, 0.603); ;
+}
+img{
+    width: 1000px;
+}
+.e{
+    font-style: oblique;
+}
+
+img{
+    width: 700px;
+}
+#contenedor{
+    width: 700px;
+    margin:30px auto;
+}
+#contenedor ul{
+    list-style: none;
+    width: 3500px;
+    display: flex;
+    animation:slide  40s infinite alternate;
+    
+}
+
+
+@keyframes slide{
+    0%{margin-left: 0px;}   
+    20%{margin-left: 0px;}
+
+    25%{margin-left: -700px;}
+    45%{margin-left: -700px;}
+
+    50%{margin-left: -1400px;}
+    70%{margin-left:-1400px ;}
+
+    75%{margin-left: -2100px;}
+    85%{margin-left: -2100px;}
+    
+    90%{margin-left: -2800px;}
+    100%{margin-left: -2800px;}
+}
+@media (max-width: 700px) {
+    nav a{
+        font-size: 20px;
+    }
+    #contenedor{
+        width: 100px;
+    }
+    #contenedor ul{
+        list-style: none;
+        width: 1500px;
+        display: flex;
+        animation:slide  20s infinite alternate;
+        
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    @keyframes slide{
+        0%{margin-left: 0px;}   
+        10%{margin-left: 0px;}
+    
+        20%{margin-left: -300px;}
+        30%{margin-left: -300px;}
+    
+        40%{margin-left: -600px;}
+        50%{margin-left:-600px;}
+    
+        60%{margin-left: -900px;}
+        70%{margin-left: -900px;}
+    
+        80%{margin-left: -1200px;}
+        100%{margin-left: -1200px;}
+}
+}
